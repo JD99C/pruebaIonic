@@ -1,0 +1,27 @@
+<app-header titulo="Grid"></app-header>
+
+<ion-content>
+
+<ion-grid fixed="true"> <!-- Añade ancho `pr ñ aizquierda y derecha -->
+  <ion-row> <!-- 12 ancho total -->
+    <ion-col size="12" sizeLg="3" sizeMd="4" sizeSm="6"
+    *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]">
+
+    <ion-card>
+      <ion-img scr="/assets/jd.png"></ion-img>
+    </ion-card>
+
+    <ion-card-header>
+      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+      <ion-card-title>Awesome Title</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Lorem Ipsim is simply dummy text of the printing and typesetting
+    </ion-card-content>
+
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

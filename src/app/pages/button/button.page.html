@@ -1,0 +1,17 @@
+<app-header titulo="Button"></app-header>
+
+
+ 
+
+<ion-content>
+  <ion-button>Default</ion-button>
+
+  <ion-buttons >
+    <ion-button (click)="onClick()">
+      <ion-icon slot="icon-only" color="danger"
+      [name]="favorite ? 'heart' : 'heart-outline' "></ion-icon>
+    </ion-button>
+  </ion-buttons>
+   
+</ion-content>
+

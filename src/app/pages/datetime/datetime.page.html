@@ -1,0 +1,10 @@
+<app-header titulo="DateTime"></app-header>
+
+<ion-content>
+    <ion-label>Fecha de nacimiento</ion-label>
+    <ion-datetime [value] = "fechaNaci.toISOString()"
+                  display-format = "DD MMMM YYYY"
+                  (ionChange)="cambioFecha($event)">
+    </ion-datetime>
+
+</ion-content>
